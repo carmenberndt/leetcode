@@ -1,13 +1,13 @@
-import array.MoveZeroes;
+import array.TwoSum;
 import java.util.Arrays;
 
 public class Main {
 
 	public static void main(String[] args) {
-		int[] nums1 = new int[]{0,1,0,3,12};
+		int[] nums1 = new int[]{2, 7, 11, 15};
 
-		MoveZeroes.moveZeroes(nums1);
+		int[] result = TwoSum.twoSum(nums1, 9);
 
-		System.out.println(Arrays.toString(nums1));
+		System.out.println(Arrays.toString(result));
 	}
 }
