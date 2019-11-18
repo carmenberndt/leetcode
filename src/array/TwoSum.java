@@ -8,8 +8,8 @@ public class TwoSum {
 	/**
 	 * Runtime: 2 ms
 	 * Memory Usage: 38.5 MB
-	 * Time Complexity:
-	 *  Space Complexity:
+	 * Time Complexity: O(n)
+	 * Space Complexity: O(n)
 	 */
 	public static int[] twoSum(int[] nums, int target){
 		HashMap<Integer, Integer> map = new HashMap<>();
