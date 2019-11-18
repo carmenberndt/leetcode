@@ -1,7 +1,13 @@
 package array;
 
+/**
+ * Runtime: 0 ms
+ * Memory Usage: 37.2 MB
+ * Space complexity: O(1)
+ * Time complexity: O(n)
+ */
 public class RotateArray {
-  public static void rotate(int[] nums, int k) {
+    public static void rotate(int[] nums, int k) {
     int length = nums.length;
     if(k == length || k == 0) return;
 
