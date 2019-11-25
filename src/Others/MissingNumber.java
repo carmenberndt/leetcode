@@ -1,7 +1,5 @@
 package Others;
 
-import java.util.HashSet;
-
 public class MissingNumber {
 
 	/**
@@ -9,7 +7,7 @@ public class MissingNumber {
 	 */
 	public static int missingNumber(int[] nums) {
 		int missing = 0;
-		int i = 0;
+		int i;
 		for (i = 0; i < nums.length; i++) {
 			missing = missing ^ i ^ nums[i];
 		}
