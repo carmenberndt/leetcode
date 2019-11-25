@@ -1,13 +1,15 @@
-import array.TwoSum;
+
+import Others.ValidParentheses;
 import java.util.Arrays;
 
 public class Main {
 
 	public static void main(String[] args) {
-		int[] nums1 = new int[]{2, 7, 11, 15};
+		System.out.println(ValidParentheses.isValid("()"));
+		System.out.println(ValidParentheses.isValid("()[]{}"));
+		System.out.println(ValidParentheses.isValid("([)]"));
+		System.out.println(ValidParentheses.isValid("{[]}"));
 
-		int[] result = TwoSum.twoSum(nums1, 9);
 
-		System.out.println(Arrays.toString(result));
 	}
 }
