@@ -25,7 +25,7 @@ public class ValidParentheses {
 		for (int i = 1; i < s.length(); i++) {
 			Character next = s.charAt(i);
 			if (characterStack.empty() || bracketCombinations.containsKey(next)) {
-				characterStack.push(next); // (])
+				characterStack.push(next);
 				continue;
 			}
 			Character topElement = characterStack.peek();
