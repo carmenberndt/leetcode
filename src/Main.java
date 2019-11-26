@@ -1,11 +1,16 @@
+import java.util.Arrays;
+import strings.ReverseString;
+
 public class Main {
 
 	public static void main(String[] args) {
-		int[][] parentChildPairs = new int[][] {
-			{1, 3}, {2, 3}, {3, 6}, {5, 6}, {5, 7},
-			{4, 5}, {4, 8}, {4, 9}, {9, 11}
-		};
+		char[] s = {'h', 'e', 'l', 'l', 'o'};
+		char[] s1 = {'H', 'a', 'n', 'n', 'a', 'h'};
 
-		System.out.println(InterviewQuestion.findNodesWithZeroAndOneParents(parentChildPairs));
+		ReverseString.reverseString(s);
+		ReverseString.reverseString(s1);
+
+		System.out.println(Arrays.toString(s));
+		System.out.println(Arrays.toString(s1));
 	}
 }
