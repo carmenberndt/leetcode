@@ -1,16 +1,15 @@
-import java.util.Arrays;
-import strings.ReverseString;
+import strings.ReverseInteger;
 
 public class Main {
 
 	public static void main(String[] args) {
-		char[] s = {'h', 'e', 'l', 'l', 'o'};
-		char[] s1 = {'H', 'a', 'n', 'n', 'a', 'h'};
+		int x = 1534236469;
+		int x1 = -123;
+		int x2 = 120;
 
-		ReverseString.reverseString(s);
-		ReverseString.reverseString(s1);
+		System.out.println(ReverseInteger.reverse(x));
+		System.out.println(ReverseInteger.reverse(x1));
+		System.out.println(ReverseInteger.reverse(x2));
 
-		System.out.println(Arrays.toString(s));
-		System.out.println(Arrays.toString(s1));
 	}
 }
