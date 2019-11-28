@@ -1,15 +1,19 @@
-import strings.ReverseInteger;
+import array.ValidSudoku;
 
 public class Main {
 
 	public static void main(String[] args) {
-		int x = 1534236469;
-		int x1 = -123;
-		int x2 = 120;
+		char[][] board = {
+			{'.','.','.','.','5','.','.','1','.'},
+			{'.','4','.','3','.','.','.','.','.'},
+			{'.','.','.','.','.','3','.','.','1'},
+			{'8','.','.','.','.','.','.','2','.'},
+			{'.','.','2','.','7','.','.','.','.'},
+			{'.','1','5','.','.','.','.','.','.'},
+			{'.','.','.','.','.','2','.','.','.'},
+			{'.','2','.','9','.','.','.','.','.'},
+			{'.','.','4','.','.','.','.','.','.'}};
 
-		System.out.println(ReverseInteger.reverse(x));
-		System.out.println(ReverseInteger.reverse(x1));
-		System.out.println(ReverseInteger.reverse(x2));
-
+		System.out.println(ValidSudoku.isValidSudoku(board));
 	}
 }
