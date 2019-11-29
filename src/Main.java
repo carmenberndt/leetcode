@@ -1,19 +1,15 @@
-import array.ValidSudoku;
+import array.RotateImage;
+import java.util.Arrays;
+import strings.FirstUniqueCharacterInAString;
 
 public class Main {
 
 	public static void main(String[] args) {
-		char[][] board = {
-			{'.','.','.','.','5','.','.','1','.'},
-			{'.','4','.','3','.','.','.','.','.'},
-			{'.','.','.','.','.','3','.','.','1'},
-			{'8','.','.','.','.','.','.','2','.'},
-			{'.','.','2','.','7','.','.','.','.'},
-			{'.','1','5','.','.','.','.','.','.'},
-			{'.','.','.','.','.','2','.','.','.'},
-			{'.','2','.','9','.','.','.','.','.'},
-			{'.','.','4','.','.','.','.','.','.'}};
+		String s = "aadadaad";
+		String s1 = "loveleetcode";
 
-		System.out.println(ValidSudoku.isValidSudoku(board));
+		System.out.println(FirstUniqueCharacterInAString.firstUniqChar(s));
+		System.out.println(FirstUniqueCharacterInAString.firstUniqChar(s1));
+
 	}
 }
