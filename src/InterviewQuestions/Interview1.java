@@ -1,3 +1,5 @@
+package InterviewQuestions;
+
 import java.util.*;
 
 /*
@@ -30,7 +32,7 @@ findNodesWithZeroAndOneParents(parentChildPairs) => [
 n: number of pairs in the input
 */
 
-public class InterviewQuestion {
+public class Interview1 {
 
 	public static List<List<Integer>> findNodesWithZeroAndOneParents(int[][] parentChildPairs) {
 		HashMap<Integer, HashSet<Integer>> childToParents = new HashMap<>();
