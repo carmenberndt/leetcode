@@ -1,16 +1,13 @@
-import strings.ValidAnagram;
+import strings.ValidPalindrome;
 
 public class Main {
 
 	public static void main(String[] args) {
-		String s = "anagram";
-		String t = "nagaram";
-		String s2 = "rat";
-		String t2 = "car";
+		String s = "A man, a plan, a canal: Panama";
+		String s2 = "race a car";
 
-		System.out.println(ValidAnagram.isAnagram(s, t));
-		System.out.println(ValidAnagram.isAnagram(s2, t2));
-
+		System.out.println(ValidPalindrome.isPalindrome(s));
+		System.out.println(ValidPalindrome.isPalindrome(s2));
 
 	}
 }

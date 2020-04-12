@@ -6,8 +6,6 @@ import java.util.HashMap;
 
 public class ValidAnagram {
 
-	static int NUMBER_OF_CHARS = 26;
-
 	/**
 	 * Runtime: 3 ms Memory Usage: 39.8 MB
 	 */
@@ -15,6 +13,7 @@ public class ValidAnagram {
 		if (s == null || t == null || s.length() != t.length()) {
 			return false;
 		}
+		int NUMBER_OF_CHARS = 26;
 		int[] count = new int[NUMBER_OF_CHARS];
 		Arrays.fill(count, 0);
 
