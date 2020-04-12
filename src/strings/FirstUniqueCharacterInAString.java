@@ -1,33 +1,51 @@
 package strings;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map.Entry;
-import java.util.Optional;
-
+import java.util.HashSet;
 
 public class FirstUniqueCharacterInAString {
 
+	/**
+	 * Runtime: 7 ms
+	 * Memory Usage: 39.8 MB
+	 */
 	public static int firstUniqChar(String s) {
 		if (s == null || s.equals("")) {
 			return -1;
 		}
-		HashMap<Character, List<Integer>> uniqueCharacters = new HashMap<>();
+		int[] characters = new int[128]; // number of ASCII chars
+		for (int i = 0; i <  s.length(); i++) {
+			characters[s.charAt(i)]++;
+		}
 		for (int i = 0; i < s.length(); i++) {
-			if (!uniqueCharacters.containsKey(s.charAt(i))) {
-				uniqueCharacters.put(s.charAt(i), new ArrayList<>(i));
-			} else {
-				uniqueCharacters.get(s.charAt(i)).add(i);
+			if (characters[s.charAt(i)] == 1) {
+				return i;
 			}
 		}
-		Optional<Entry<Character, List<Integer>>> first = uniqueCharacters.entrySet()
-			.stream()
-			.filter(k -> k.getValue().size() == 1)
-			.findFirst();
-		if (first.isEmpty()) {
+		return -1;
+	}
+
+
+	/**
+	 * Runtime: 22 ms
+	 * Memory Usage: 40.4 MB
+	 */
+	public static int firstUniqCharFirstTry(String s) {
+		if (s == null || s.equals("")) {
 			return -1;
 		}
-		return first.get().getValue().get(0);
+		HashSet<Character> characters = new HashSet<>();
+		HashSet<Character> notUniqueCharacters = new HashSet<>();
+		for (int i = 0; i < s.length(); i++) {
+			if (!characters.contains(s.charAt(i))) {
+				characters.add(s.charAt(i));
+			} else {
+				notUniqueCharacters.add(s.charAt(i));
+			}
+		}
+		for (int i = 0; i < s.length(); i++) {
+			if(!notUniqueCharacters.contains(s.charAt(i))) {
+				return i;
+			}
+		}
+		return -1;
 	}
 }
