@@ -1,8 +1,4 @@
-import InterviewQuestions.Interview1;
 import InterviewQuestions.Interview2;
-import array.RotateImage;
-import java.util.Arrays;
-import strings.FirstUniqueCharacterInAString;
 
 public class Main {
 
