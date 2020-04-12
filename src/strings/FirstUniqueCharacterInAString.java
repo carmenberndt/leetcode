@@ -11,7 +11,7 @@ public class FirstUniqueCharacterInAString {
 		if (s == null || s.equals("")) {
 			return -1;
 		}
-		int[] characters = new int[128]; // number of ASCII chars
+		int[] characters = new int[256]; // number of chars
 		for (int i = 0; i <  s.length(); i++) {
 			characters[s.charAt(i)]++;
 		}
