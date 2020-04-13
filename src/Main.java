@@ -1,20 +1,23 @@
-import strings.StringToInteger;
+import strings.ImplementstrStr;
 
 public class Main {
 
 	public static void main(String[] args) {
-		String s = " ";
-		String t = "   -42";
-		String u = "4193 with words";
-		String v = "words and 987";
-		String w = "-91283472332";
+		String hayStack = "hello";
+		String needle = "ll";
 
-		System.out.println("Should Be: " + "0, Actual: " + StringToInteger.myAtoi(s));
-		System.out.println("Should Be: " + "-42, Actual: " + StringToInteger.myAtoi(t));
-		System.out.println("Should Be: " + "4193, Actual: " + StringToInteger.myAtoi(u));
-		System.out.println("Should Be: " + "0, Actual: " + StringToInteger.myAtoi(v));
-		System.out.println("Should Be: " + "-2147483648, Actual: " + StringToInteger.myAtoi(w));
+		String hayStack2 = "aaaaa";
+		String needle2 = "bba";
 
+		String hayStack3 = "mississippi";
+		String needle3 = "issipi";
+
+		System.out
+			.println("Should Be: " + "2, Actual: " + ImplementstrStr.strStr(hayStack, needle));
+		System.out
+			.println("Should Be: " + "-1, Actual: " + ImplementstrStr.strStr(hayStack2, needle2));
+		System.out
+			.println("Should be: -1, Actual: " + ImplementstrStr.strStr(hayStack3, needle3));
 
 	}
 }
