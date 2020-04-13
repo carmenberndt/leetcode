@@ -1,21 +1,17 @@
-import strings.LongestCommonPrefix;
+import strings.CountAndSay;
 
 public class Main {
 
 	public static void main(String[] args) {
-		String[] input = {"flower", "flow", "flight"};
-		String[] input2 = {"dog", "racecar", "car"};
-		String[] input3 = {"a"};
+		int input = 1;
+		int input2 = 4;
 
 		System.out
 			.println(
-				"Should Be: " + "'fl', Actual: " + LongestCommonPrefix.longestCommonPrefix(input));
+				"Should Be: " + "1, Actual: " + CountAndSay.countAndSay(input));
 		System.out
 			.println(
-				"Should Be: " + "'', Actual: " + LongestCommonPrefix.longestCommonPrefix(input2));
-		System.out
-			.println(
-				"Should Be: " + "'a', Actual: " + LongestCommonPrefix.longestCommonPrefix(input3));
+				"Should Be: " + "1211, Actual: " + CountAndSay.countAndSay(input2));
 
 	}
 }
