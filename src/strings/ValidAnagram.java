@@ -15,7 +15,6 @@ public class ValidAnagram {
 		}
 		int NUMBER_OF_CHARS = 26;
 		int[] count = new int[NUMBER_OF_CHARS];
-		Arrays.fill(count, 0);
 
 		for (int i = 0; i < s.length(); i++) {
 			count[s.charAt(i) - 'a']++;
